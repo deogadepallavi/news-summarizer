@@ -17,7 +17,7 @@ export function SearchComponent(props: {
             Go
         </button>
         {props.value.trim() === "" && (
-      <p>Please enter some text</p>
+      <p className="textFont-style">Please enter some text</p>
     )}
     </div>;
 }

@@ -15,7 +15,18 @@ function Search() {
 
     const handleSearchClick = async () => {
         console.log('News summarizer for:', searchTerm);
-        const response = await metaphor.search(searchTerm, {});
+        const response = await metaphor.search(searchTerm, {
+            includeDomains: [
+                "foxnews.com",
+                "bbc.com",
+                "cnn.com",
+                "news.sky.com",
+                "msnbc.com",
+                "euronews.com",
+                "geotv.com",
+                "abcnews.go.com"
+            ]
+        });
 
         setSearchResponse(response);
     };
@@ -28,7 +39,9 @@ function Search() {
         <div>
             {searchResponse.results.length !== 0 ? <button type="button" className={"search-button"} onClick={() => clearResults()}>Clear Results</button> : null}
             {searchResponse.results.length === 0 ? <SearchComponent value={searchTerm} onChange={handleSearchChange} onClick={handleSearchClick}/> : <SearchResult apiClient={metaphor} searchResponse={searchResponse}/>}
+
         </div>
+        
     );
 }
 

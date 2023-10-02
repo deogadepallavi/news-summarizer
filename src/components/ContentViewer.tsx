@@ -10,19 +10,20 @@ interface ContentViewerProps {
 function ContentViewer( props : ContentViewerProps) {
     return (
         <div className="document-list">
-            <button type="button" className={"btn btn-primary"} onClick={() => props.onBackClick(true)}>Back</button>
             {props.documents.map((document) => (
                 <div key={document.id} className="document">
-                    <h2>{document.title}</h2>
-                    <p>
-                        <strong>URL:</strong>{' '}
+                    <h2 className="textFont-style">{document.title}</h2>
+                    <p className="textFont-style">
+                        <h4>URL:</h4>{' '}
                         <a href={document.url} target="_blank" rel="noopener noreferrer">
                             {document.url}
                         </a>
                     </p>
-                    <p>
-                        <strong>Summary:</strong> {extractParagraphContent(document.extract)}
+                    <p className="textFont-style">
+                        <h4>Summary:</h4> {extractParagraphContent(document.extract)}
                     </p>
+                    <button type="button" className={"backButton-style"} onClick={() => props.onBackClick(true)}>Back</button>
+
                 </div>
             ))}
         </div>

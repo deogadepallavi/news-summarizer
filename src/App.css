@@ -4,7 +4,7 @@
   font-family: 'Courier New', monospace;
   padding: 0 30px 0 30px;
   width: 250px;
-  font-size: 20px; 
+  font-size: 30px; 
   background: linear-gradient(to right, rgb(75, 95, 255), rgb(195, 67, 255));;
   -webkit-background-clip: text; 
   background-clip: text; 
@@ -18,7 +18,9 @@
   border-radius: 4px;
   padding: 10px 20px;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 13px;
+  margin-left: 20px;
+  margin-top: 10px;
 }
 
 .learnMore-button{
@@ -50,7 +52,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  min-height: 70vh;
 }
 
 .search-container {
@@ -71,7 +73,7 @@
 }
 
 .search-result {
-  background-color: #DAECFF;
+  background-color: #fffdd0;
   border: 1px solid #ddd;
   border-radius: 4px;
   padding: 16px;
@@ -99,6 +101,22 @@
 
 .textFont-style{
   font-family: 'Courier New', monospace;
+}
+
+.title-style{
+  background: linear-gradient(100.48deg, rgb(75, 95, 255) 8.23%, rgb(195, 67, 255) 132.47%) text, linear-gradient(100.48deg, rgb(195, 67, 255) 30.23%, rgb(75, 95, 255) 129.23%);
+}
+
+.backButton-style{
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 12px;
+  margin-left: 20px;
+  margin-top: 10px;
 }
 
 @media (max-width: 768px) {
