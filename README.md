@@ -1,46 +1,37 @@
-# Getting Started with Create React App
+Project Title: News Summarizer
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Project Description:
 
-## Available Scripts
+- The "News Summarizer" project is LLM application with an advanced AI-powered search engine        designed to revolutionize the way we consume news and information. It leverages technologies such as TypeScript, Bootstrap, HTML5, CSS3, and React to create an intuitive and efficient platform for users.
 
-In the project directory, you can run:
+- At its core, the News Summarizer project aims to streamline and simplify this process by providing users with concise and tailored news summaries. It harnesses the power of Metaphor's APIs to enhance the user experience in three keyways:
 
-### `npm start`
+1. Search API: This project utilizes the Metaphor Search API to deliver robust and efficient search functionality. Users can easily discover news articles that match their interests and queries, ensuring a more personalized news consumption experience.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+2. Find Similar API: It leverage the Metaphor Find Similar API to provide users with relevant and related content suggestions. This feature enhances user engagement by recommending additional articles based on the content they are currently viewing.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+3. Get Contents API: For in-depth content retrieval, the project employs the Metaphor Get Contents API. This API allows us to retrieve the complete content of specific news articles, enabling us to generate comprehensive summaries or present the full article to our users.
 
-### `npm test`
+- With the combined power of Metaphor's APIs and web technologies, the News Summarizer project is poised to offer an unparalleled news consumption experience, making it easier than ever for users to stay informed in today's fast-paced world.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+Get started: 
+- clone the project by using the following commmand:
+    "git clone https://github.com/deogadepallavi/news-summarizer.git"
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Next in the project directory, you can run:
+    cd news-summarizer
+    npm run start
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- It will run the app in the development mode.
+    Open http://localhost:3000 to view it in the browser.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+- It will display the home screen with a search box where you can enter a keyword and it will search for the related news from the following leading news channels: 
+    - foxnews.com
+    - bbc.com
+    - cnn.com
+    - news.sky.com
+    - msnbc.com
+    - euronews.com
+    - geotv.com
+    - abcnews.go.com
